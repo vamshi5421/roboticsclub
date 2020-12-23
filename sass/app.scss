@@ -1,0 +1,77 @@
+/*
+Color-primary-:#6a4dff
+Color-primary-1:#4cc4ff
+
+Green #2dd272
+Red  #eb4747
+Yellow  #e6b319
+Blue-black  #232837
+     2 #1d1c22
+
+
+
+     #1f1e24
+     #151519
+*/
+
+@import "base/base";
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+@import "base/mediaQueries";
+
+
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "components/buttons";
+
+@import "pages/home";
+
+@import "layouts/header";
+
+
+
+.typing-animation{
+  margin-top: -300px;
+}
+
+.typing-animation .container  {
+  height: 95vh;
+  margin-top: 100px;
+  background-color: #1f1e24;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+  align-items: center;
+}
+
+
+.container__text {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* Cursor */
+.txt-type {
+  color: $color-purple;
+  font-size: 45px;
+  font-weight: 400;   
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid $color-grey-dark;
+}
+
+
+
+

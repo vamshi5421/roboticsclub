@@ -1,0 +1,103 @@
+.header {
+  font-weight: 700;
+  font-size: 30px;
+  height: 95vh;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url(../img/519164.png);
+  
+
+  background-size: cover;
+  border-radius: 10px;
+  
+
+  &__logo-box {
+    // position: absolute;
+    top: 40px;
+    left: 40px;
+
+    padding: 10px 0px;
+
+    
+  }
+  &__logo-iiit {
+    height: 105px;
+    padding-top: 10px;
+  }
+  &__logo-logo {
+    height: 100px;
+    
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+.nav-links,.header__logo-box {
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+li {
+  display: block;
+  transition: all .2s;
+
+}
+
+.aboutUs {
+  height: 95vh;
+  margin-left: 80px;
+  // display: flex;
+
+  &-img {
+    height: 95%;
+
+    margin: 50px 20px;
+    padding: 0;
+    border-radius: 40px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 40px;
+    width: 500px;
+
+    &-para {
+      font-size: 16px;
+      margin: 20px;
+      text-align: left;
+    }
+  }
+}
+
+
+
+.hoverLi {
+  transition: .3s;
+}
+
+.hoverLi-elements {
+  display: inline-block;
+  font-weight: 300;
+  
+  
+  color :white;
+  font-size: 20px;
+  pointer-events: none;
+  transition: transform .1s linear;
+}
