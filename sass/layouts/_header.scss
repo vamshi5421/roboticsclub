@@ -13,7 +13,7 @@
   
 
   &__logo-box {
-    // position: absolute;
+    
     top: 40px;
     left: 40px;
 
@@ -62,7 +62,7 @@ li {
 .aboutUs {
   height: 95vh;
   margin-left: 80px;
-  // display: flex;
+  
 
   &-img {
     height: 95%;
@@ -101,3 +101,4 @@ li {
   pointer-events: none;
   transition: transform .1s linear;
 }
+

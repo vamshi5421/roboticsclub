@@ -235,51 +235,81 @@ h2 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "box1 box2 box2" "box1 box2 box2"; }
 
-.projects {
-  background-color: #151519;
-  border-radius: 20px;
-  margin: 70px 140px;
-  height: 80vh;
-  color: white; }
-
-.projects-boxes {
-  height: 80vh;
-  margin: 50px 60px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "b1 b4  " "b2 b4 " "b3 b3 "; }
-
-.box {
-  margin: 10px 20px;
-  padding: 30px 10px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: #333333; }
-  .box-img {
-    border-radius: 20000px;
-    height: 50%;
+.coordinators {
+  height: 100vh;
+  margin-top: 50px; }
+  .coordinators__container {
+    display: flex;
+    justify-content: space-around;
     align-items: center; }
+  .coordinators h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px; }
+  .coordinators p {
+    text-align: center;
+    text-justify: auto;
+    padding: 10px 80px; }
+  .coordinators__box {
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px; }
+    .coordinators__box-image {
+      height: 450px; }
+      .coordinators__box-image img {
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+        box-sizing: border-box; }
 
-.b1 {
-  transition: all .2s ease-out; }
-  .b1:hover {
-    background-color: #6a4dff; }
+ul {
+  list-style-type: none; }
 
-.b2 {
-  transition: all .2s ease-out; }
-  .b2:hover {
-    background-color: #6a4dff; }
+.type a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 50px;
+  text-transform: uppercase; }
 
-.b3 {
-  transition: all .2s ease-out; }
-  .b3:hover {
-    background-color: #6a4dff; }
+.type span {
+  font-weight: 700;
+  color: cadetblue; }
 
-.b4 {
-  transition: all .2s ease-out; }
-  .b4:hover {
-    background-color: #6a4dff; }
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 400;
+  background-color: rgba(0, 97, 161, 0.568); }
+
+.linkedIn {
+  color: white;
+  align-items: center;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .linkedIn-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px; }
+  .linkedIn img {
+    height: 40px;
+    top: 50%;
+    left: 20%;
+    transform: translate(10px, 10px); }
+
+.type {
+  display: flex;
+  flex-direction: column; }
 
 .header {
   font-weight: 700;
