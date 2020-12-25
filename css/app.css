@@ -23,7 +23,6 @@ html {
 
 body {
   background-color: #151519;
-  padding: 40px;
   cursor: none; }
 
 @keyframes moveInLeft {
@@ -233,7 +232,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "box1 box2 box2" "box1 box2 box2"; }
+  grid-template-areas: "box1 box2 box2" "box1 box2 box2"; }
 
 .coordinators {
   height: 100vh;
@@ -251,16 +250,17 @@ h2 {
     text-justify: auto;
     padding: 10px 80px; }
   .coordinators__box {
-    width: 300px;
+    width: 350px;
     box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     margin-top: 30px; }
     .coordinators__box-image {
-      height: 450px; }
+      width: 350px;
+      height: auto; }
       .coordinators__box-image img {
-        width: 300px;
+        width: 350px;
         height: auto;
         object-fit: cover;
         box-sizing: border-box; }
@@ -273,7 +273,6 @@ ul {
   color: white;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 50px;
   text-transform: uppercase; }
 
 .type span {
@@ -286,16 +285,16 @@ ul {
   justify-content: space-between;
   padding: 20px;
   font-weight: 400;
-  background-color: rgba(0, 97, 161, 0.568); }
+  background-color: #151519; }
 
 .linkedIn {
   color: white;
   align-items: center;
   border-radius: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: row; }
+  flex-direction: column; }
   .linkedIn-link {
     color: white;
     text-decoration: none;
@@ -311,6 +310,15 @@ ul {
   display: flex;
   flex-direction: column; }
 
+.socialMediaAll {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -20px; }
+  .socialMediaAll-elements {
+    height: 40px;
+    margin-right: 10px; }
+
 .header {
   font-weight: 700;
   font-size: 30px;
@@ -318,8 +326,7 @@ ul {
   position: relative;
   overflow: hidden;
   background-image: url(../img/519164.png);
-  background-size: cover;
-  border-radius: 10px; }
+  background-size: cover; }
   .header__logo-box {
     top: 40px;
     left: 40px;
@@ -387,8 +394,7 @@ li {
 .typing-animation .container {
   height: 95vh;
   margin-top: 100px;
-  background-color: #1f1e24;
-  border-radius: 10px; }
+  background-color: #1f1e24; }
 
 .container {
   display: flex;
